@@ -2,9 +2,9 @@
   <div id="app">
     <div class="overlay" :class="{'hide': showWork}"></div>
     <ul class="menu" :class="{'show-menu': showWork}">
-      <li @click="transitionHome">Home</li>
-      <li @click="transitionWork">Work</li>
-      <li @click="transitionAbout">About</li>
+      <li class="button" @click="transitionHome">Home</li>
+      <li class="button" @click="transitionWork">Work</li>
+      <li class="button" @click="transitionAbout">About</li>
     </ul>
     <grid :class="{'shift': showWork, 'show-page': work}" />
     <about :class="{'shift': showWork, 'show-page': !work}" />
@@ -35,7 +35,7 @@ export default {
 
   computed: {
     showWork() {
-      return this.$store.state.viewWork;
+      return this.$store.state.viewWork
     }
   },
 
@@ -81,6 +81,7 @@ export default {
   transform: translateY(-100%);
   transition: all ease 0.5s;
   padding: 0;
+  z-index: $front;
 
   li {
     padding: 0 2rem;

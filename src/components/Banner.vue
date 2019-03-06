@@ -1,5 +1,5 @@
 <template>
-  <div class="banner" :class="{'hide': showWork}">
+  <div class="banner" :class="{'hide': showWork,'remove': remove}">
     <h1>Ted Tobin</h1>
     <p>COPYWRITER. CREATIVE DIRECTOR. PRODUCER.</p>
     <button class="projects" @click="viewWork">View Work</button>
@@ -15,15 +15,24 @@ export default {
     show: Boolean
   },
 
+  data() {
+    return {
+      remove: false
+    }
+  },
+
   computed: {
     showWork() {
-      return this.$store.state.viewWork;
+      return this.$store.state.viewWork
     }
   },
 
   methods: {
     viewWork() {
       this.$store.commit('toggleWork')
+      setTimeout(() => {
+        this.remove = !this.remove
+      }, 1000)
     }
   }
 }

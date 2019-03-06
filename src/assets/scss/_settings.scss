@@ -44,18 +44,14 @@ p {
   line-height: 2rem;
 
   @media #{$small} {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }
 
 a {
-  // reset color with variable
-  color: $gold;
+  color: $red;
   text-decoration: none;
-  &.router-link-exact-active {
-	// reset color with variable
-	color: $gold;
-  }
+  font-size: 1rem;
 }
 
 span {
@@ -71,12 +67,12 @@ button {
   background: transparent;
   border: 0;
   padding: 0;
+  color: $red;
 }
 
 .button {
 	padding: 0.5rem 2rem;
-	border: 1px solid $gold;
-	color: $gold;
+	color: $red;
 }
 
 ul {
@@ -88,7 +84,7 @@ ul {
 }
 
 .svg-inline--fa {
-  color: $gold;
+  color: $yellow;
   font-size: 1.4rem;
   padding-right: 0.5rem;
 
@@ -104,6 +100,9 @@ ul {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  overflow-y: scroll;
   position: absolute;
+  background: $yellow;
   width: 100vw;
+  height: 100vh;
 }
