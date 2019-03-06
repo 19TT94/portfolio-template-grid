@@ -64,6 +64,7 @@ export default {
   height: 100%;
   background: rgba(0,0,0,0.6);
   filter: blur(20px);
+  z-index: $default;
 }
 
 .menu {

@@ -46,6 +46,7 @@ export default {
   padding: 2rem;
   opacity: 1;
   transition: all ease 1s;
+  z-index: $front;
 
   p {
     font-size: 1.2rem;
