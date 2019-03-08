@@ -4,7 +4,7 @@
     <p>
       Lorem ipsum dolor amet keffiyeh hella skateboard jean shorts, shoreditch blue bottle tacos poutine pop-up chia thundercats vaporware hashtag stumptown. Humblebrag activated charcoal ramps irony, hella quinoa scenester. Post-ironic fashion axe VHS, XOXO mustache 90's normcore gentrify pok pok narwhal schlitz lumbersexual jianbing. Raclette echo park copper mug try-hard.
 
-      Roof party beard tumeric bushwick la croix portland. Actually cold-pressed 8-bit cred. Ugh +1 vinyl austin banh mi, migas actually butcher VHS raclette. Gentrify heirloom viral small batch yr. Four loko vexillologist pitchfork live-edge, blue bottle semiotics polaroid pok pok glossier snackwave ethical. Ennui thundercats twee direct trade bitters. Kogi quinoa bushwick af prism chicharrones cronut four loko iceland kitsch YOLO.
+      Roof party beard tumeric bushwick la croix portland.
     </p>
     <button class="button contact">Contact</button>
   </div>
@@ -39,7 +39,7 @@ export default {
 @import '@/assets/scss/app.scss';
 
 .about {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: calc(100% - 50px);

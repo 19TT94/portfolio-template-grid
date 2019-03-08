@@ -11,10 +11,6 @@
 export default {
   name: 'Banner',
 
-  props: {
-    show: Boolean
-  },
-
   data() {
     return {
       remove: false
@@ -30,9 +26,6 @@ export default {
   methods: {
     viewWork() {
       this.$store.commit('toggleWork')
-      setTimeout(() => {
-        this.remove = !this.remove
-      }, 1000)
     }
   }
 }
